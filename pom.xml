@@ -171,13 +171,6 @@
 			<version>${javax.servlet.jstl-version}</version>
 		</dependency>
 		
-		<!-- ojdbc7 library -->
-		<!-- https://mvnrepository.com/artifact/com.github.noraui/ojdbc7 -->
-		<dependency>
-		    <groupId>com.github.noraui</groupId>
-		    <artifactId>ojdbc7</artifactId>
-		    <version>${com.oracle-ojdbc7}</version>
-		</dependency>
 
 		<!-- Commons Database Connection Pooling -->
 		<dependency>

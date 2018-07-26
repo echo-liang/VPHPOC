@@ -8,6 +8,7 @@
 				<div class="col-xs-5 vcenter-xs">
 					<h1>Welcome to Support Console</h1>
 					<h1>Current date time: ${curDateTime}</h1> 
+					<h1>Version 1.0</h1>
 				</div>
 				
 			</div>

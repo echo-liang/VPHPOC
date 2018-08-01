@@ -24,16 +24,7 @@
 	   <property name="host" value="apps.smtp.gov.bc.ca"/>
 	</bean>
 	
-    <!-- Creating TransactionManager Bean, since JDBC we are creating of type DataSourceTransactionManager -->
-	<bean id="vphTransactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
-		<property name="dataSource" ref="vphDataSource" />
-	</bean>    
-    <!-- Our datasource -->
-	<jee:jndi-lookup id="vphDataSource" jndi-name="java:jboss/datasources/mysql" expected-type="javax.sql.DataSource" />
- 
- 	<bean id="vphJdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
-	    <property name="dataSource" ref="vphDataSource"/>
-    </bean>
+    
     
     <!-- Handles HTTP GET requests for /resources/** by efficiently serving up static resources in the ${webappRoot}/resources directory -->
    	<mvc:resources mapping="/resources/**" location="/resources/" />

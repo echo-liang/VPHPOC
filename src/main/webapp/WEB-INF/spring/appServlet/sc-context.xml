@@ -18,7 +18,7 @@
        http://www.springframework.org/schema/cache http://www.springframework.org/schema/cache/spring-cache.xsd">
 
 	<!-- Scans within the base package of the application for @Component classes to configure as beans -->
-    <context:component-scan base-package="pssg.poc.web.controller, pssg.poc.web.rest.controller"/>
+    <context:component-scan base-package="pssg.poc"/>
 		
 	<bean id="mailSender" class="org.springframework.mail.javamail.JavaMailSenderImpl">
 	   <property name="host" value="apps.smtp.gov.bc.ca"/>

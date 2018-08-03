@@ -35,7 +35,7 @@
                         <c:forEach items="${tickets}" var="ticket" varStatus="ticketLoop">
                         	 <tr>   
                         	 	<td class="col-md-3">
-                        	 		${ticket.ticketid}
+                        	 		${ticket.ticketID}
                                 </td>                          
                                 <td class="col-md-3">
                                 	${ticket.ticketNO}

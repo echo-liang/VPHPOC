@@ -68,6 +68,12 @@
 		</property>
 	</bean>
 	
-
+	<!-- reads properties and makes them available as beans-->
+	<bean id="vphscProperties" class="pssg.poc.service.propertyconfigurer.EnvPropertyPlaceholderConfigurer">
+		<property name="location">
+			<value>classpath:vphsc.properties</value>
+		</property>
+		<property name="ignoreUnresolvablePlaceholders" value="true"/>
+	</bean>
 	
 </beans>

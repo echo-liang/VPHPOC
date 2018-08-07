@@ -29,6 +29,11 @@
         <extension module="org.wildfly.extension.security.manager"/>
         <extension module="org.wildfly.extension.undertow"/>
     </extensions>
+    
+    <system-properties>
+        <property name="targetEnvironment" value="dev"/>
+    </system-properties>
+    
     <management>
         <security-realms>
             <security-realm name="ManagementRealm">

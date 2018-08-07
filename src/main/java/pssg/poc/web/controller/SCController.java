@@ -46,6 +46,8 @@ public class SCController {
         String strDate = sdfDate.format(now);
         
     	model.addAttribute("curDateTime", strDate);
+    	model.addAttribute("greeting", VPHSCWebProperties.GREETING);
+    	model.addAttribute("version", VPHSCWebProperties.VERSION);
     	List<VPHTicket> tickets = vphService.getTickets();
     	model.addAttribute("tickets", tickets);
     	return "home";

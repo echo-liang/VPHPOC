@@ -1,4 +1,4 @@
-package pssg.poc.web.rest.controller;
+package pssg.poc.web.controller.rest;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;

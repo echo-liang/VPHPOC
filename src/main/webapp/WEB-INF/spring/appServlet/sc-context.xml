@@ -18,7 +18,7 @@
        http://www.springframework.org/schema/cache http://www.springframework.org/schema/cache/spring-cache.xsd">
 
 	<!-- Scans within the base package of the application for @Component classes to configure as beans -->
-    <context:component-scan base-package="pssg.poc.web.controller, pssg.poc.web.rest.controller, pssg.poc.dataaccess"/>
+    <context:component-scan base-package="pssg.poc.web.controller, pssg.poc.dataaccess"/>
 		
 	<bean id="mailSender" class="org.springframework.mail.javamail.JavaMailSenderImpl">
 	   <property name="host" value="apps.smtp.gov.bc.ca"/>
@@ -68,5 +68,12 @@
 		</property>
 	</bean>
 	
+	<!-- reads properties and makes them available as beans-->
+	<bean id="vphscProperties" class="pssg.poc.service.propertyconfigurer.EnvPropertyPlaceholderConfigurer">
+		<property name="location">
+			<value>classpath:vphsc.properties</value>
+		</property>
+		<property name="ignoreUnresolvablePlaceholders" value="true"/>
+	</bean>
 	
 </beans>
